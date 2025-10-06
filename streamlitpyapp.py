@@ -5,7 +5,7 @@ from bson.objectid import ObjectId
 import plotly.express as px
 
 # --- Configuration ---
-MONGO_URI = "mongodb+srv://pranamvitthalpatil9040:pranam@9040@cluster0.fju3io1.mongodb.net/?retryWrites=true&w=majority"
+MONGO_URI ="mongodb+srv://pranamvitthalpatil9040:pranam%409040@cluster0.fju3io1.mongodb.net/?retryWrites=true&w=majority"
 DB_NAME = "UniversityDB_ADBMS"
 COLLECTION_NAME = "students"
 
@@ -326,4 +326,5 @@ with tab3:
     if not df_all.empty:
         st.dataframe(df_all)
     else:
+
         st.info("Database is currently empty.")
